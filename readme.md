@@ -5,7 +5,7 @@ This is a [Nimiq](https://nimiq.com) cryptocurrency miner.  Run it like
     $ docker run -d \
         --name nimiq-miner \
         --mount 'type=volume,source=nimiq-miner,destination=/home/nimiq' \
-        jpsecher/nimiq-miner \
+        lishaode/nimiq-miner \
         --pool=eu.nimpool.io:8444 \
         --wallet-address=NQ98E1HUKDV5ASY6RTY8RV28Y8KX8UNKJ1GS
 
@@ -14,7 +14,7 @@ Or start it with `docker-compose up -d`:
     version: "3"
     services:
       nimiq-miner:
-        image: jpsecher/nimiq-miner
+        image: lishaode/nimiq-miner
         command: --wallet-address=NQ98E1HUKDV5ASY6RTY8RV28Y8KX8UNKJ1GS
         volumes:
           - nimiq-miner:/home/nimiq
