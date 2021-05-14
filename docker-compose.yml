@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nimiq-miner:
-    image: jpsecher/nimiq-miner
+    image: lishaode/nimiq-miner
     command: --wallet-address=NQ98E1HUKDV5ASY6RTY8RV28Y8KX8UNKJ1GS --type=light --pool=us.nimpool.io:8444
     volumes:
       - nimiq-miner:/home/nimiq
